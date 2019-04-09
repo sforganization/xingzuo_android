@@ -1,0 +1,145 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#0099cc"
+    tools:context="com.example.administrator.full.FullscreenActivity0">
+
+    <!-- The primary full-screen view. This can be replaced with whatever view
+         is needed to present your content, e.g. VideoView, SurfaceView,
+         TextureView, etc. -->
+    <TextView
+        android:id="@+id/fullscreen_content"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:keepScreenOn="true"
+        android:text="@string/dummy_content"
+        android:textColor="#33b5e5"
+        android:textSize="50sp"
+        android:textStyle="bold" />
+
+    <!-- This FrameLayout insets its children based on system windows using
+         android:fitsSystemWindows. -->
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fitsSystemWindows="true">
+
+        <LinearLayout
+            android:id="@+id/fullscreen_content_controls"
+            style="?metaButtonBarStyle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom|center_horizontal"
+            android:background="@color/black_overlay"
+            android:orientation="horizontal"
+            tools:ignore="UselessParent">
+
+            <Button
+                android:id="@+id/dummy_button"
+                style="?metaButtonBarButtonStyle"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="@string/dummy_button" />
+
+        </LinearLayout>
+    </FrameLayout>
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+    </FrameLayout>
+
+    <ImageView
+        android:id="@+id/screen0_imageView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:srcCompat="@drawable/backgroup" />
+
+    <Button
+        android:id="@+id/screen0_entry"
+        android:textSize="52dp"
+        android:textColor="#FFFFFF"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:typeface="serif"
+        android:text="确定"
+        android:layout_gravity="top|right"
+        android:layout_marginRight="180dp"
+        android:layout_marginTop="400dp"
+        android:background="@drawable/button_style"
+        android:visibility="visible"/>
+
+    <com.itheima.wheelpicker.WheelPicker
+        android:id="@+id/wheelPickMonth"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="top|right"
+        android:layout_marginRight="600dp"
+        android:layout_marginTop="44dp"
+        app:wheel_atmospheric="true"
+        app:wheel_curved="true"
+        app:wheel_cyclic="true"
+        app:wheel_selected_item_position="5"
+        app:wheel_item_text_color="#00ffff"
+        app:wheel_selected_item_text_color="#fffff0"
+        app:wheel_indicator="true"
+        app:wheel_indicator_color="#FAEBD7"/>
+
+    <com.itheima.wheelpicker.WheelPicker
+        android:id="@+id/wheelPickData"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="top|right"
+        android:layout_marginRight="400dp"
+        android:layout_marginTop="44dp"
+        app:wheel_atmospheric="true"
+        app:wheel_curved="true"
+        app:wheel_cyclic="true"
+        app:wheel_selected_item_position="5"
+        app:wheel_item_text_color="#00ffff"
+        app:wheel_selected_item_text_color="#fffff0"
+        app:wheel_indicator="true"
+        app:wheel_indicator_color="#FAEBD7"
+        />
+
+    <TextView
+        android:id="@+id/full0_textView"
+        android:textColor="#FFFFFF"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:typeface="serif"
+        android:textSize="70dp"
+        android:text="月"
+        android:layout_gravity="top|right"
+        android:layout_marginRight="500dp"
+        android:layout_marginTop="220dp" />
+
+    <TextView
+        android:id="@+id/full0_textView2"
+        android:textColor="#FFFFFF"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:typeface="serif"
+        android:textSize="70dp"
+        android:text="日"
+        android:layout_gravity="top|right"
+        android:layout_marginRight="300dp"
+        android:layout_marginTop="220dp" />
+
+    <TextView
+        android:id="@+id/full0_textView_choose"
+        android:textColor="#FFFFFF"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:typeface="serif"
+        android:textSize="70dp"
+        android:text="请选择"
+        android:layout_gravity="top|left"
+        android:layout_marginLeft="30dp"
+        android:layout_marginTop="60dp" />
+</FrameLayout>
